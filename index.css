@@ -1,0 +1,274 @@
+body{
+    margin: 0px;
+    top: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(53, 1, 53);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /* border: black 2px solid; */
+    display: flex;
+    flex-direction: row;
+}
+#left{
+    width: 25%;
+    height: 100vh;
+    /* border: blue 2px solid; */
+    /* display: inline-block; */
+    background-color: rgb(53, 1, 53);
+    color: white;    
+    /* animation: index 2s 1; */
+}
+#right{
+    width: 75%;
+    height: 100vh;
+    background-color: rgb(252, 235, 252);
+    /* border: blue 2px solid; */
+    /* display: inline-block; */
+}
+.subIndex{
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.subIndex:hover{
+    color: rgb(249, 218, 249);
+}
+#visible{
+    width: 100%;
+    height: 60px;
+}
+#indexList{
+    text-decoration: none;;
+    padding: 10px;
+}
+.visible{
+    width: 100%;
+    height: 60px;
+    /* border: palegreen 2px solid; */
+}
+#visibleIndex {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 60px;
+    height: 30px;
+    border-radius: 15%;
+    cursor: pointer;
+}
+#nonVisibleIndex{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(53, 1, 53);
+    border-radius: 15%;
+    cursor: pointer;
+}
+.rightContent{
+    width: 100%;
+    height: 90vh;
+    /* border: purple 2px solid; */
+}
+.rightDisplays{
+    width: 100%;
+    height: 100%;
+    /* border: red 2px solid; */
+}
+.myimage{
+    width: 100%;
+    height: auto;
+    /* border: black 2px solid; */
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+}
+.myimage img {
+    width: 250px;
+    height: 250px;
+    border-radius: 60%;
+}
+.par{
+    width: 100%;
+    height: 70%;
+    /* border: black 2px solid; */
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.schoolimage, .collegeimage{
+    width: 100%;
+    height: 100px;
+    /* border: black 2px solid; */
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+}
+.schoolimage img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.collegeimage img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.exam{
+    display: flex;
+    justify-content: center;
+}
+.exam h1{
+    margin: 10px;
+}
+.aboutschool, .aboutcollege{
+    width: 100%;
+    height: 150px;
+    /* border: black 2px solid; */
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutschool h1, h2, .aboutcollege h1, h2{
+    margin: 5px;
+}
+.skillphoto{
+    width: 70px;
+    height: 70px;
+    /* border: black 2px solid; */
+}
+.skillphoto img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.skills{
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.eachskill{
+    width: auto;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.eachproject{
+    width: 350px;
+    height: auto;
+}
+.eachproject img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.personalInfo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#parhead{
+    font-size: 50px;
+    font-weight: bolder;
+    animation: port 5s infinite;
+}
+.par h1{
+    margin: 10px;
+}
+.personal h1{
+    font-size: 40px;
+    margin: 10px;
+    font-weight: bolder;
+}
+.personal h2{
+    font-size: 30px;
+}
+
+#first{
+  animation: first 22s  0s infinite ;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+#second{
+  animation: first 22s  2s infinite ;
+}
+#ninth{
+  animation: first 22s  4s infinite ;
+}
+#third{
+    animation: first 22s  6s infinite ;
+  }
+#forth{
+  animation: first 22s  8s infinite ;
+}
+#fifth{
+  animation: first 22s  10s infinite ;
+}
+#sixth{
+  animation: first 22s  12s infinite ;
+}
+#seventh{
+  animation: first 22s  14s infinite ;
+}
+#eighth{
+  animation: first 22s  16s infinite ;
+}
+#tenth{
+  animation: first 22s  18s infinite ;
+}
+#eleventh{
+  animation: first 22s  20s infinite ;
+}
+
+@keyframes port{
+    0%{
+        display: none;
+        color: rgb(252, 235, 252);
+    }
+    100%{
+        display:  block;
+    }
+}
+
+@keyframes index{
+    0%{
+        display: block;
+    }
+    100%{
+        display: none;
+    }
+}
+
+@keyframes first{
+    0%{
+        transform: scale(0);
+        transform: rotate(0);
+        opacity: 0;
+    }
+    10%{
+        transform: scale(1.1);
+        transform: rotate(180);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        transform: rotate(180);
+    }
+}
